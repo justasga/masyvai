@@ -40,7 +40,35 @@ echo "<br>";
 
 
     print('<br>');
-    print $people['Saulius']
+    print $people['Saulius'];
+
+    print('<br>');
+
+    foreach (["1", "2", "3" ] as $val)
+
+$my_arr10 = array(
+    "Mindaugas" => [10, 9, 8, 10],
+    "Maksas" => [9, 8, 8, 5],
+    "Petras" => [10, 9, 8, 9, 5],
+  );
+
+  for ($i = 0; $i < count(array_keys($my_arr10)); $i++) { 
+    print(array_keys($my_arr10)[$i] . '->');
+    for ($j = 0 ; $j < count($my_arr10[array_keys($my_arr10)[$i]]); $j++) { 
+      print($my_arr10[array_keys($my_arr10)[$i]][$j] . ' ');
+    }
+    print("<br>");
+  }
+
+  foreach ($my_arr10 as $name => $grades){ 
+    print($name . '->');
+    foreach ($grades as $grade) {
+      print($grade . ' ');
+    }
+    print("<br>");
+  }
+  
+  print("</pre><br>");
 
 
 
