@@ -44,31 +44,45 @@ echo "<br>";
 
     print('<br>');
 
-    foreach (["1", "2", "3" ] as $val)
+    // LOOPS
 
-$my_arr10 = array(
-    "Mindaugas" => [10, 9, 8, 10],
-    "Maksas" => [9, 8, 8, 5],
-    "Petras" => [10, 9, 8, 9, 5],
-  );
+    $number_arr = [1, 2, 3, 4, 5, 6];
 
-  for ($i = 0; $i < count(array_keys($my_arr10)); $i++) { 
-    print(array_keys($my_arr10)[$i] . '->');
-    for ($j = 0 ; $j < count($my_arr10[array_keys($my_arr10)[$i]]); $j++) { 
-      print($my_arr10[array_keys($my_arr10)[$i]][$j] . ' ');
+    for($i = 0; $i < count($number_arr); $i++){
+          print($number_arr[$i]);
     }
-    print("<br>");
-  }
 
-  foreach ($my_arr10 as $name => $grades){ 
-    print($name . '->');
-    foreach ($grades as $grade) {
-      print($grade . ' ');
-    }
-    print("<br>");
-  }
-  
-  print("</pre><br>");
+    print('<br>');
+    // ------------------------------------
+    // for($i = 0; $i < count($number_arr); $i++) {
+    //     if($number_arr[$i] = "2") {
+    //         print(" Skaičius 2" . '<br>');
+    //         break;
+    //    }
+   // }
+    print('<br>');
+    // ------------------------------------
+
+    
+
+        for ($i = 0; $i < count($number_arr); $i += 2) 
+            echo $number_arr[$i];
+
+            print('<br>');
+            print_r($number_arr);
+            print('<br>');
+
+            
+            
+        for ($i = 1; $i < count($number_arr); $i += 2) 
+        echo $number_arr[$i];
+
+
+     
+
+
+
+
 
 
 
